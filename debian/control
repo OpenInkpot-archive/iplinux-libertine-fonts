@@ -1,0 +1,16 @@
+Source: libertine-fonts
+Section: gui
+Priority: optional
+Maintainer: Mikhail Gusarov <dottedmag@dottedmag.net>
+Homepage: http://linuxlibertine.sourceforge.net/
+Standards-Version: 3.8.0
+Build-Depends: debhelper (>= 5)
+XCS-Cross-Host-Build-Depends: debhelper (>= 5.0.22)
+XS-Vcs-Git: http://git.openinkpot.org/libertine-fonts.git
+XS-Vcs-Browser: http://git.openinkpot.org/libertine-fonts.git
+
+Package: libertine-fonts
+Architecture: all
+Description: Linux Libertine font family
+ Artful digital font-family called Linux Libertine, an elegant good-readable
+ Unicode type for daily & professional use.
