@@ -1,3 +1,10 @@
+libertine-fonts (4.1.8-1) asimov; urgency=low
+
+  * New upstream release.
+  * First build for IPlinux.
+
+ -- Mikhail Gusarov <dottedmag@dottedmag.net>  Fri, 13 Mar 2009 17:33:24 +0600
+
 libertine-fonts (2.8.14-1.oi1) asimov; urgency=low
   
   * Initial packaging.
