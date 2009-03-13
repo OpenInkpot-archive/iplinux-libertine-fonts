@@ -3,6 +3,43 @@ LOFP -- http://linuxlibertine.sf.net
 Please note: The underlined variant is recently not being maintained because 
 its concept doesnt seem to be sofware-technically reliable and because of lack of interest. 
 
+Changes to version 4.1.8 regular(-) & italic(/) & capitals (C) (20081103)
+- finer and more organic serifs for nearly all glyphs
+- basic EM-background proportion changed to 726 (above base line) and 472 (below the baseline) 
+- Fonts bounds/linespacing in TTF and OTF adjusted
+- E, F: a bit thinner now
+- A,V,W,v,w design improvements in diagonals
+- some small improvements in spacing of small basic latin charakters
+- reduced overshoot for wide-round contours
+- a, e: small designchange
+- m is a little wider now
+- basic working EM is now 1000 instead of 2048
+- tz-ligature
+- z's diagonal is a bit thicker, the horizontals a bit thinner, now
+- new glyphs like curl for bible studies
+- shortened few overbounding glyphs
+- improvements in polytonic greek
+- J, j: change in design of the bow and drop
+
+
+Changes to version 2.9 (unreleased) regular(-) & italic(/) & capitals (C) (20080619)
+- There was a compiling-problem with the LinLibertine_Re-2.8.14.otf that caused a unusable GSUB-table. Though outline-information seemed to be unaffected MacOSX didn’t want to intall it. This version should be without this bug, the reason for the old bug could not be discovered.
+- Change in the OpenType-Substitution table (different order of interpretation: sups and sinf should be substituted even if oldstyle flag is also set.
+/ True Cyrrillic italics for the italic variant
+/ new “a” for the italic, also thinner p, n, m and e
+/ Some stylistic improvements for italic numbers
+/ new @ for the italic
+- further kerning
+/ improved accented characters in the italic variant 
+- Q’s tail is now more harmonic and looks as drawn out of the O and not as just clipped to the bottom
+- Qu (Q_u) has been improved and is now standard ligature
+- new form for s_t- and c_t-ligature, Thanks to Nathan!
+- OpenType-GSUB-table has been improved. New functionality for Romanian and Moldavian (comma-accent instead of cedilla), for Turky (idotaccent.sc is chosen when Tyrkish is default language, otherwiese i.sc is the small capital form used; f_i_()-ligatures are set off in Turkish because it hinders the differenciation of f-i and f-dotlessi in that language.
+/ Italic variant now uses the same perfect OpenType-GSUB as the regular.
+/ new a.sc for the italic. Adding missing sc-glyphs, bring others to the latest design.
+
+
+
 Changes to version 2.8.14 regular(|) & italic(/) & capitals (20080619)
 
 - TTF-Hinting improvements because of better TTF-Instruction of FontForge
