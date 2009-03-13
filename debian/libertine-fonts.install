@@ -1,2 +1,1 @@
-LinLibertine_*.otf usr/share/fonts/truetype/libertine/
-LinLibertineC_*.otf usr/share/fonts/truetype/libertine/
+LinLibertine*_*.otf usr/share/fonts/truetype/libertine/
