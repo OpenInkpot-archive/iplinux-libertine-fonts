@@ -14,3 +14,8 @@ Architecture: all
 Description: Linux Libertine font family
  Artful digital font-family called Linux Libertine, an elegant good-readable
  Unicode type for daily & professional use.
+
+Package: biolinum-fonts
+Architecture: all
+Description: Biolinum font family
+ Biolinum font family from Linux Libertine project.
