@@ -3,6 +3,33 @@ LOFP -- http://linuxlibertine.sf.net
 Please note: The underlined variant is recently not being maintained because 
 its concept doesnt seem to be sofware-technically reliable and because of lack of interest. 
 
+Changes to version 4.4.1 regular(-) & italic(/) & capitals (C) (20090321)
+- First release of Linux Biolinum and its bold variant
+- New paragraphs signs (uni00A7 and uni00B6)
+- nicer guillemets uni00AB and 00BB as well as the single ones
+- improved "copyright"-sign and "registered"-sign
+- improved micro-sign
+- further improvements in the small capitals set
+- superior/inferior h, i, j, n, r has now new serifs, too
+- new dotaccent.cap-glyph (slightly bigger than dotaccent) for capital glyphs 
+- j slightly improved upper serif (now similar to i)
+- improvements in row of IPA-signs (recent serifs etc)
+- Asterisk has now f-height (a bit lower than before) and lost bearing left and right
+- 0, 2, 3, 4, 5, 6, 7, 8, 9 slight improvements
+- tilde, slight improvements
+- cedilla improved (now somewhat thicker)
+- ae improved
+- C, c, e, t new finely bulged runner (or however you might call the thin end of these letters)
+- brought some ligatures up to recent baseglyph form
+- florin improved
+- dansk ring accent improved -> aring
+- comma accent improved, in characters with this accent the latter have now the same vertical position
+- roman numbers improved
+- and many smaller things I forgot to note
+- as well as hopefully all that I marked as "solved" in the bug tracker
+
+
+
 Changes to version 4.1.8 regular(-) & italic(/) & capitals (C) (20081103)
 - finer and more organic serifs for nearly all glyphs
 - basic EM-background proportion changed to 726 (above base line) and 472 (below the baseline) 
@@ -157,7 +184,7 @@ Changes to version 2.6.9 regular(|) & italic(/) & capitals (20070423)
 
 Gernerally: 
 	- Symbols for „page“, „graph“, „picture“ and „table“ added
-	- Oldstyle numbers (minuscle numbers) were just contained as proportionals. Somebody wanted them also as table numbers. Ladder became standard oldstyles now. Some of these glyphs look somehow thinner to fit them on the fixed width.
+	- Oldstyle numbers (minuscle numbers) were just contained as proportionals. Somebody wanted them also as table numbers. Ladder became standard oldstyles now. Some of these glyphs look somewhat thinner to fit them on the fixed width.
 	-bold italic variant had a wrong style entry which seemed to confuse Mac's fonthandling, also other style confusions should be fixed now
 	-bold italic also had wrong metrics which resulted in a cutoff of glyph parts and wrong line spacing.
 
