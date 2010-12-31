@@ -1,7 +1,86 @@
-LOFP -- http://linuxlibertine.sf.net
+Libertine Open Fonts Project -- http://linuxlibertine.sf.net
 
-Please note: The underlined variant is recently not being maintained because 
-its concept doesnt seem to be sofware-technically reliable and because of lack of interest. 
+Changes to version 4.7.0 regular(-) & italic(/) & capitals (C) (20100430)
+
+- All styles: Reported bugs fixed.
+
+- Libertine regular:
+	- added missing anchors for i, idieresis, ccaron, scaron
+	- added missing characters accent uni0364 and glyph uni1D15
+	- completed combining accented chars block 0300-036F
+	-ij-Ligature more space between the glyphs, dot of j is slightly higher
+	-i,j,... more distinctive dotaccent and higher position
+	-r,f,j,y changes in the drop, which became more distinctive 
+	- h slightl wider
+	- e slightly wider
+	- moved [a-z].superior from PUA to dedicated Unicode positions
+	- crossed form of W for new Wikipedia-logo
+
+- Biolinum Bold: numerous improvements in following glyphs:
+	- a
+	- i, j, ä, ö, ü...
+	- w, v
+	- e
+	- f, ß
+	- c
+	- m, n
+	- b, d
+	- s
+	- kerning faults corrected
+	- numbers 0 - 9
+	- komma , hyphen -, numbersign #
+	- f
+	- A-Z slightly thinner verticals
+	- R, P better bows
+
+
+- added small cyrillic m (uni043C) to Biolinum and some other missing cyrillics (not yet all done...)
+- Inverted Interrobang (uni2E18) added
+- Add Substitution/Transposition brackets 2E02-0A
+- macroncmb (uni0304) had a wrong positioned mark anchor and was thus flying much to high
+- Problems with Fractions (ID 2665656): without a contextual chaining substitution fractions like 1/7 or 1/10, that don't have a concrete Unicode-posistion, were unavailible. Now solved via contextual chaining substitution.
+- bold: ck, ch-ligature's part characters were a bit close. Now some more space between them
+- diacritic U+031A was wrongly placed. Is now being positioned above-right. New anchor is called top_rechts
+- corrected s_t-ligature in biolinum bold
+Ingo Preuss points out thatsome glyphs were wrongly named:
+- uni0237 is now called dotlessj (instead of uniF6BE, which was wrongly named 
+this way)
+- all references to dotlessj now point to uni0237
+
+In the following cases names were corrected, unicode points stayed unchanged
+- tcommaaccent (uni0163) is now called tcedilla
+- Tcommaaccent (uni0162) is now called Tcedilla
+- uni021B is now called tcommaaccent 
+- uni021A is now called Tcommaaccent 
+- the locl-OpenType-substitution for Romanian wasn't changed, because it already worked correctly
+- orthogonal is now called uni221F
+- sun is now called uni263C 
+- I had to move that .cap-variants of the accents to the PUA, because they covered space where Unicode in between defined new characters. So I systematically moved the .cap-Accents to:
+     grave.cap uni0358 -> uniE358 
+     acute.cap uni0359 -> uniE359
+     circumflex.cap and so forth
+     caron.cap
+     breve.cap
+     hungarumlaut.cap
+     space_uni030F.cap
+     breveinvertedcmb.cap
+     breve.cyrcap 360
+     breve.cyr
+     dieresis.cap
+     hookabovecomb.cap
+     dotaccent.cap
+(regular, italic)
+- new point accent at uni0358
+- new Mark for uni0358 in many O/o-characters
+- improved support for POJ (Taiwan transcription)
+- now kerning for kernclasspair p.sc + a.sc 
+- first use of contextual chaining substitution:
+   - when a combining accent follows an i, the dotlessi is used to prevent an accent crash
+   - when one of the accented or leftwarding glyphs such as (ä, V) follow an f, a short neck version of f (f.alt) is being used for optical reasons
+- Added U+033B COMBINING SQUARE BELOW
+- there was the "space" in a left kern class (together with dot, etc.). This resulted in too few visible room when a "space" should seperate a word from the now beginning quotation. 
+Italic: Correction of schwa
+
 
 Changes to version 4.4.1 regular(-) & italic(/) & capitals (C) (20090321)
 - First release of Linux Biolinum and its bold variant
@@ -27,7 +106,13 @@ Changes to version 4.4.1 regular(-) & italic(/) & capitals (C) (20090321)
 - roman numbers improved
 - and many smaller things I forgot to note
 - as well as hopefully all that I marked as "solved" in the bug tracker
-
+- same height for underbar in unicode positions as well in combined chars with uni0331 (same with italic)
+- frac-table: wrong entry "three fraction eight -> fiveeights" corrected
+- Glyph-naming synchronized for
+Biolinum Re, Biolinum Bd, 
+- uni0361 (ligature symbol) and 035C (ligature aubsymbol)added
+- uni033B (quadratic subaccent) added
+- vertical position of combining-accent-macron and true macron-unicode-glyphs equalized
 
 
 Changes to version 4.1.8 regular(-) & italic(/) & capitals (C) (20081103)
@@ -47,6 +132,7 @@ Changes to version 4.1.8 regular(-) & italic(/) & capitals (C) (20081103)
 - shortened few overbounding glyphs
 - improvements in polytonic greek
 - J, j: change in design of the bow and drop
+
 
 
 Changes to version 2.9 (unreleased) regular(-) & italic(/) & capitals (C) (20080619)
